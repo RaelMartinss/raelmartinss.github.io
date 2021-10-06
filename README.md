@@ -1,7 +1,7 @@
 <h1 align="center">
-  My resume web page<br>
-  <img src="assets/img/preview.png"/>
+ Página do meu currículo<br>
+  <img src="assets/img/pre.png"/>
 </h1>
-This is my resume/personal introduction page, you can see it clicking on the link below
+Este é o meu currículo / página de introdução pessoal, você pode vê-lo clicando no link abaixo
 
-## [Click here to check the final result](https://raelmartinss.github.io)
+## [Clique aqui para conferir o resultado final](https://raelmartinss.github.io)
