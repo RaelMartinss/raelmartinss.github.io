@@ -1,42 +1,40 @@
-/*!
-    * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-    */
-    (function ($) {
-    "use strict"; // Start of use strict
+const menuButton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = [...navLinks]
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
 
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
+if (window.lucide) {
+    window.lucide.createIcons();
+}
+
+menuButton?.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+});
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("is-open");
+        menuButton?.setAttribute("aria-expanded", "false");
+    });
+});
+
+const setActiveLink = () => {
+    let current = sections[0];
+
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 130) {
+            current = section;
         }
     });
 
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
+    navLinks.forEach((link) => {
+        link.classList.toggle("is-active", current && link.getAttribute("href") === `#${current.id}`);
     });
+};
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#sideNav",
-    });
-})(jQuery); // End of use strict
+setActiveLink();
+window.addEventListener("scroll", setActiveLink, { passive: true });
