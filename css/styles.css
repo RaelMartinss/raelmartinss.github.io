@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
     color: var(--text);
     background:
-        radial-gradient(circle at 72% 8%, rgba(39, 135, 255, 0.22), transparent 28rem),
+        radial-gradient(circle at 72% 8%, rgba(39, 135, 255, 0.14), transparent 30rem),
         linear-gradient(135deg, #020813 0%, #04111e 48%, #020813 100%);
     font-family: "Inter", Arial, sans-serif;
     line-height: 1.6;
@@ -106,7 +106,7 @@ button {
     font-weight: 800;
     background: linear-gradient(135deg, var(--blue), var(--blue-soft));
     border-radius: 6px;
-    box-shadow: 0 0 24px rgba(39, 135, 255, 0.32);
+    box-shadow: 0 8px 24px rgba(39, 135, 255, 0.2);
 }
 
 .nav-links {
@@ -211,7 +211,7 @@ button {
     height: 9px;
     background: var(--green);
     border-radius: 999px;
-    box-shadow: 0 0 18px rgba(35, 215, 125, 0.8);
+    box-shadow: 0 0 10px rgba(35, 215, 125, 0.52);
 }
 
 .eyebrow {
@@ -260,8 +260,7 @@ button {
 .contact-actions svg,
 .text-link svg,
 .card-link svg,
-.btn svg,
-.info-strip svg {
+.btn svg {
     width: 20px;
     height: 20px;
 }
@@ -305,7 +304,7 @@ button {
 .btn-primary {
     border-color: transparent;
     background: linear-gradient(135deg, var(--blue), #0f6bdb);
-    box-shadow: 0 14px 38px rgba(39, 135, 255, 0.32);
+    box-shadow: 0 10px 24px rgba(39, 135, 255, 0.22);
 }
 
 .btn-primary:hover {
@@ -335,8 +334,8 @@ button {
     border: 2px solid rgba(39, 135, 255, 0.72);
     border-radius: 50%;
     box-shadow:
-        inset 0 0 60px rgba(39, 135, 255, 0.16),
-        0 0 80px rgba(39, 135, 255, 0.24);
+        inset 0 0 40px rgba(39, 135, 255, 0.1),
+        0 0 44px rgba(39, 135, 255, 0.16);
 }
 
 .portrait-card {
@@ -358,19 +357,6 @@ button {
     object-position: center;
 }
 
-.code-orbit {
-    position: absolute;
-    top: 35%;
-    right: 8%;
-    z-index: 2;
-    color: var(--blue);
-    font-family: "JetBrains Mono", monospace;
-    font-size: 2.2rem;
-    font-weight: 800;
-    opacity: 0.85;
-}
-
-.info-strip,
 .panel,
 .contact-panel {
     border: 1px solid var(--line);
@@ -379,41 +365,11 @@ button {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
 }
 
-.info-strip {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    overflow: hidden;
-}
-
-.info-strip article {
-    display: grid;
-    align-content: start;
-    gap: 2px;
-    min-height: 116px;
-    padding: 24px;
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.info-strip svg {
-    margin-bottom: 10px;
-    color: var(--blue-soft);
-}
-
-.info-strip strong {
-    font-size: 1rem;
-}
-
-.info-strip span {
-    color: var(--muted-2);
-    font-size: 0.92rem;
-}
-
 .two-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding-top: 24px;
+    padding-top: 8px;
 }
 
 .panel {
@@ -503,7 +459,7 @@ button {
     background: var(--blue);
     border: 3px solid #09223d;
     border-radius: 50%;
-    box-shadow: 0 0 22px rgba(39, 135, 255, 0.8);
+    box-shadow: 0 0 14px rgba(39, 135, 255, 0.48);
     transform: translateX(-50%);
 }
 
@@ -577,7 +533,7 @@ button {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
@@ -592,6 +548,7 @@ button {
 }
 
 .project-media {
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -601,6 +558,19 @@ button {
     overflow: hidden;
     border-radius: 8px;
     background: #0d1d30;
+}
+
+.project-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-alura img {
+    object-position: center;
+    transform: scale(1.28);
 }
 
 .project-media svg {
@@ -624,17 +594,21 @@ button {
         repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 28px);
 }
 
-.project-orion {
-    align-items: center;
-    justify-content: center;
-    background:
-        radial-gradient(circle at 50% 120%, rgba(39, 135, 255, 0.9), transparent 38%),
-        linear-gradient(135deg, #07111f, #0c2340);
+.project-alura {
+    background: #020813;
 }
 
-.project-orion strong {
-    font-size: 2rem;
-    letter-spacing: 0.18rem;
+.project-alura::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(180deg, rgba(2, 8, 19, 0.06), rgba(2, 8, 19, 0.38));
+}
+
+.project-codflix {
+    background:
+        linear-gradient(135deg, rgba(39, 135, 255, 0.22), rgba(10, 24, 42, 0.88)),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 24px);
 }
 
 .project-card h3 {
@@ -793,10 +767,6 @@ button {
         place-items: center;
     }
 
-    .info-strip {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .project-grid,
     .cert-grid {
         grid-template-columns: 1fr;
@@ -836,15 +806,6 @@ button {
 
     .portrait-card {
         width: min(84%, 320px);
-    }
-
-    .code-orbit {
-        right: 0;
-        font-size: 1.6rem;
-    }
-
-    .info-strip {
-        grid-template-columns: 1fr;
     }
 
     .tech-grid {
