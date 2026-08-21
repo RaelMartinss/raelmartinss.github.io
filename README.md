@@ -1,7 +1,7 @@
 <h1 align="center">
- Página do meu currículo<br>
+ Portfólio profissional<br>
   <img src="assets/img/pre.png"/>
 </h1>
-Este é o meu currículo / página de introdução pessoal, você pode vê-lo clicando no link abaixo
+Portfólio de Rael Martins, Desenvolvedor Backend com experiência em Python/Django e foco em TypeScript, Node.js, APIs REST, PostgreSQL e Docker.
 
 ## [Clique aqui para conferir o resultado final](https://raelmartinss.github.io)

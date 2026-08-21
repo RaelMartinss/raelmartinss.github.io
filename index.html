@@ -1,375 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-        name="description"
-        content="Portfólio de Rael Martins, Desenvolvedor Full Stack Júnior com experiência em Python, Django, JavaScript, React, TypeScript e SQL Oracle."
-    />
-    <meta name="author" content="Rael Martins" />
-    <meta
-        name="keywords"
-        content="Rael Martins, Desenvolvedor Full Stack Júnior, Python, Django, JavaScript, React, TypeScript, SQL Oracle, Portfólio"
-    />
-    <title>Rael Martins | Desenvolvedor Full Stack Júnior</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
-        rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Rael Martins, Desenvolvedor Backend com experiência em Python e Django e foco em TypeScript, Node.js, APIs REST, PostgreSQL e Docker.">
+  <meta name="author" content="Rael Martins">
+  <meta name="keywords" content="Rael Martins, Desenvolvedor Backend, Backend Developer, TypeScript, Node.js, Python, Django, APIs REST, PostgreSQL, Docker, Domain-Driven Design, DDD">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://raelmartinss.github.io/">
+  <meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Rael Martins | Desenvolvedor Backend">
+  <meta property="og:title" content="Rael Martins | Desenvolvedor Backend"><meta property="og:description" content="Desenvolvedor Backend com experiência em Python/Django e foco em TypeScript, Node.js, APIs REST, PostgreSQL e Docker."><meta property="og:url" content="https://raelmartinss.github.io/">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Rael Martins | Desenvolvedor Backend"><meta name="twitter:description" content="TypeScript · Node.js · Python/Django · APIs REST · PostgreSQL · Docker">
+  <title>Rael Martins | Desenvolvedor Backend</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"><link href="css/styles.css" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rael Martins","url":"https://raelmartinss.github.io/","jobTitle":"Desenvolvedor Backend","address":{"@type":"PostalAddress","addressLocality":"Paragominas","addressRegion":"PA","addressCountry":"BR"},"sameAs":["https://github.com/RaelMartinss","https://www.linkedin.com/in/rael-martins-dev"],"knowsAbout":["TypeScript","Node.js","Python","Django","APIs REST","PostgreSQL","Docker","Domain-Driven Design"]}</script>
 </head>
 <body>
-    <header class="site-header" id="top">
-        <nav class="nav shell" aria-label="Navegação principal">
-            <a class="brand" href="#inicio" aria-label="Voltar ao início">
-                <span class="brand-mark">RM</span>
-                <span>Rael Martins</span>
-            </a>
-
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="sr-only">Abrir menu</span>
-            </button>
-
-            <div class="nav-links" id="site-menu">
-                <a href="#sobre">Sobre</a>
-                <a href="#experiencia">Experiência</a>
-                <a href="#tecnologias">Tecnologias</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#certificacoes">Certificações</a>
-                <a href="#contato">Contato</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero shell section" id="inicio">
-            <div class="hero-content">
-                <div class="status-pill">
-                    <span></span>
-                    Aberto a oportunidades júnior
-                </div>
-
-                <p class="eyebrow">Olá, eu sou</p>
-                <h1>Rael <span>Martins</span></h1>
-                <p class="role">Desenvolvedor Full Stack Júnior</p>
-
-                <div class="location-line">
-                    <i data-lucide="map-pin" aria-hidden="true"></i>
-                    Paragominas - PA
-                </div>
-
-                <p class="hero-description">
-                    Trabalho com manutenção, correção de bugs e evolução de sistemas
-                    web corporativos, principalmente com Python, Django, JavaScript,
-                    React, TypeScript, Bootstrap e SQL Oracle.
-                </p>
-
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="assets/curriculos/Curriculo_Rael_Martins_2026.pdf" download>
-                        <i data-lucide="download" aria-hidden="true"></i>
-                        Baixar currículo
-                    </a>
-                    <a class="btn" href="https://www.linkedin.com/in/rael-martins-dev" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="linkedin" aria-hidden="true"></i>
-                        LinkedIn
-                    </a>
-                    <a class="btn" href="https://github.com/RaelMartinss" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="github" aria-hidden="true"></i>
-                        GitHub
-                    </a>
-                    <a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=5564981473630&text=Ol%C3%A1%20Rael!" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="message-circle" aria-hidden="true"></i>
-                        WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero-visual" aria-label="Foto de perfil de Rael Martins">
-                <div class="portrait-card">
-                    <img src="https://avatars.githubusercontent.com/u/77245288?v=4" alt="Rael Martins" />
-                </div>
-            </div>
-        </section>
-
-        <section class="section shell two-columns" id="sobre">
-            <article class="panel">
-                <div class="section-title">
-                    <i data-lucide="user" aria-hidden="true"></i>
-                    <h2>Sobre mim</h2>
-                </div>
-                <p>
-                    Sou Desenvolvedor Full Stack Júnior com experiência no
-                    desenvolvimento e manutenção de sistemas web corporativos. Já atuei
-                    em rotinas de suporte, banco Oracle, ajustes de interface, consultas
-                    SQL e correções em aplicações internas. Gosto de entender o problema
-                    antes de mexer no código e de entregar melhorias que facilitem o uso
-                    no dia a dia.
-                </p>
-            </article>
-
-            <article class="panel">
-                <div class="section-title">
-                    <i data-lucide="sparkles" aria-hidden="true"></i>
-                    <h2>Foco atual</h2>
-                </div>
-                <p>
-                    Aprofundar Python e Django no back-end, melhorar meu domínio de
-                    React e TypeScript no front-end e evoluir em consultas SQL,
-                    integrações e organização de código em projetos reais.
-                </p>
-            </article>
-        </section>
-
-        <section class="section shell panel" id="experiencia">
-            <div class="section-heading">
-                <div class="section-title">
-                    <i data-lucide="briefcase-business" aria-hidden="true"></i>
-                    <h2>Experiência profissional</h2>
-                </div>
-            </div>
-
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-date">2024 - 2026</div>
-                    <div class="timeline-content">
-                        <h3>Desenvolvedor Júnior <span>Vólus</span></h3>
-                        <p>
-                            Desenvolvimento e manutenção de sistemas web corporativos
-                            utilizando Python, Django, JavaScript, React, TypeScript,
-                            Bootstrap e SQL Oracle. Criação e ajuste de consultas SQL,
-                            integração com banco Oracle, correção de bugs, melhorias de
-                            performance e apoio no desenvolvimento de novas funcionalidades.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="timeline-item">
-                    <div class="timeline-date">2023 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>Assistente de Suporte de TI <span>Vólus</span></h3>
-                        <p>
-                            Suporte técnico a clientes e setores internos, consultas em
-                            banco Oracle, manutenção de máquinas, redes e acompanhamento
-                            de sistemas internos.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="timeline-item">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>Estágio / Tecnologia - Suporte <span>Vólus</span></h3>
-                        <p>
-                            Atendimento de chamados, suporte a usuários, configuração de
-                            equipamentos e apoio em rotinas de infraestrutura de TI.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section shell panel" id="tecnologias">
-            <div class="section-title">
-                <i data-lucide="terminal" aria-hidden="true"></i>
-                <h2>Tecnologias</h2>
-            </div>
-
-            <div class="tech-grid" aria-label="Lista de tecnologias">
-                <span><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span>
-                <span><i class="devicon-django-plain colored" aria-hidden="true"></i>Django</span>
-                <span><i class="devicon-javascript-plain colored" aria-hidden="true"></i>JavaScript</span>
-                <span><i class="devicon-typescript-plain colored" aria-hidden="true"></i>TypeScript</span>
-                <span><i class="devicon-react-original colored" aria-hidden="true"></i>React</span>
-                <span><i class="devicon-nextjs-plain" aria-hidden="true"></i>Next.js</span>
-                <span><i class="devicon-nodejs-plain colored" aria-hidden="true"></i>Node.js</span>
-                <span><i data-lucide="database" aria-hidden="true"></i>SQL</span>
-                <span><i class="devicon-oracle-original colored" aria-hidden="true"></i>Oracle</span>
-                <span><i class="devicon-postgresql-plain colored" aria-hidden="true"></i>PostgreSQL</span>
-                <span><i class="devicon-mongodb-plain colored" aria-hidden="true"></i>MongoDB</span>
-                <span><i class="devicon-html5-plain colored" aria-hidden="true"></i>HTML</span>
-                <span><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS</span>
-                <span><i class="devicon-bootstrap-plain colored" aria-hidden="true"></i>Bootstrap</span>
-                <span><i class="devicon-git-plain colored" aria-hidden="true"></i>Git</span>
-                <span><i class="devicon-github-original" aria-hidden="true"></i>GitHub</span>
-                <span><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
-            </div>
-        </section>
-
-        <section class="section shell panel" id="projetos">
-            <div class="section-heading">
-                <div class="section-title">
-                    <i data-lucide="folder-git-2" aria-hidden="true"></i>
-                    <h2>Projetos em destaque</h2>
-                </div>
-                <a class="text-link" href="https://github.com/RaelMartinss" target="_blank" rel="noopener noreferrer">
-                    Ver todos no GitHub
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-media project-finance">
-                        <i data-lucide="badge-dollar-sign" aria-hidden="true"></i>
-                    </div>
-                    <h3>Finance</h3>
-                    <p>
-                        Aplicação financeira desenvolvida em TypeScript para organizar
-                        lançamentos e acompanhar informações de controle pessoal.
-                    </p>
-                    <div class="tags">
-                        <span>TypeScript</span>
-                    </div>
-                    <a class="card-link" href="https://github.com/RaelMartinss/appfinance" target="_blank" rel="noopener noreferrer">
-                        Ver projeto
-                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-media project-agenda">
-                        <i data-lucide="calendar-days" aria-hidden="true"></i>
-                    </div>
-                    <h3>Agenda</h3>
-                    <p>
-                        Projeto para criar, modificar e deletar contatos, com página
-                        de login e fluxo básico de gerenciamento de agenda.
-                    </p>
-                    <div class="tags">
-                        <span>JavaScript</span>
-                    </div>
-                    <a class="card-link" href="https://github.com/RaelMartinss/agenda" target="_blank" rel="noopener noreferrer">
-                        Ver projeto
-                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-media project-alura">
-                        <img src="assets/img/aluraplus-background.png" alt="Prévia do projeto aluraplus" />
-                    </div>
-                    <h3>Alura Plus</h3>
-                    <p>
-                        Página estática inspirada na Alura Plus, criada para praticar
-                        estrutura HTML, CSS e composição de layout responsivo.
-                    </p>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <a class="card-link" href="https://github.com/RaelMartinss/aluraplus" target="_blank" rel="noopener noreferrer">
-                        Ver projeto
-                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-media project-codflix">
-                        <!-- <i data-lucide="clapperboard" aria-hidden="true"></i> -->
-                         <img src="assets/img/codflix.jpg" alt="Prévia do projeto codflix" />
-                    </div>
-                    <h3>Codflix</h3>
-                    <p>
-                        Projeto em TypeScript com foco em interface de catálogo,
-                        organização de conteúdo e prática de componentes.
-                    </p>
-                    <div class="tags">
-                        <span>TypeScript</span>
-                    </div>
-                    <a class="card-link" href="https://github.com/RaelMartinss/codflix" target="_blank" rel="noopener noreferrer">
-                        Ver projeto
-                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <section class="section shell panel" id="certificacoes">
-            <div class="section-title">
-                <i data-lucide="shield-check" aria-hidden="true"></i>
-                <h2>Certificações</h2>
-            </div>
-
-            <div class="cert-grid">
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>Projetos Ágeis com SCRUM</strong>
-                    <span>Digital Innovation</span>
-                </article>
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>JavaScript do básico ao avançado</strong>
-                    <span>Digital Innovation</span>
-                </article>
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>Docker</strong>
-                    <span>FullCycle</span>
-                </article>
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>Git e GitHub avançado</strong>
-                    <span>FullCycle</span>
-                </article>
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>Integração contínua</strong>
-                    <span>FullCycle</span>
-                </article>
-                <article>
-                    <i data-lucide="badge-check" aria-hidden="true"></i>
-                    <strong>GitOps</strong>
-                    <span>FullCycle</span>
-                </article>
-            </div>
-        </section>
-
-        <section class="section shell contact-panel" id="contato">
-            <div>
-                <div class="section-title">
-                    <i data-lucide="send" aria-hidden="true"></i>
-                    <h2>Entre em contato</h2>
-                </div>
-                <p>
-                    Estou aberto a conversar sobre vagas júnior, projetos e colaboração.
-                    Pode me chamar por e-mail ou WhatsApp.
-                </p>
-            </div>
-
-            <div class="contact-actions">
-                <a href="mailto:raelpgm2@gmail.com">
-                    <i data-lucide="mail" aria-hidden="true"></i>
-                    raelpgm2@gmail.com
-                </a>
-                <a href="tel:+5564981473630">
-                    <i data-lucide="phone" aria-hidden="true"></i>
-                    (64) 98147-3630
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5564981473630&text=Ol%C3%A1%20Rael!" target="_blank" rel="noopener noreferrer">
-                    <i data-lucide="message-circle" aria-hidden="true"></i>
-                    (64) 98147-3630
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer shell">
-        <a class="brand" href="#inicio" aria-label="Voltar ao início">
-            <span class="brand-mark">RM</span>
-        </a>
-        <p>© 2026 Rael Martins. Todos os direitos reservados.</p>
-        <span>Desenvolvido com HTML, CSS e JavaScript.</span>
-    </footer>
-
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+  <header class="site-header" id="top"><nav class="nav shell" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-mark">RM</span><span>Rael Martins</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><span class="sr-only">Abrir menu</span></button>
+    <div class="nav-links" id="site-menu"><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#tecnologias">Tecnologias</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a></div>
+  </nav></header>
+  <main>
+    <section class="hero shell section" id="inicio">
+      <div class="hero-content"><p class="eyebrow">Olá, eu sou Rael Martins</p><h1>Desenvolvedor <span>Backend</span></h1><p class="role">TypeScript · Node.js · Python/Django · APIs REST · PostgreSQL · Docker</p><div class="location-line"><i data-lucide="map-pin" aria-hidden="true"></i>Paragominas - PA, Brasil</div><p class="hero-description">Desenvolvedor backend com experiência profissional em sistemas web corporativos e foco atual em TypeScript e Node.js.</p><div class="hero-actions"><a class="btn btn-primary" href="https://github.com/RaelMartinss" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub</a><a class="btn" href="https://www.linkedin.com/in/rael-martins-dev" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i>LinkedIn</a><a class="btn" href="assets/curriculos/Curriculo_Rael_Martins_2026.pdf" download><i data-lucide="download"></i>Baixar currículo</a></div></div>
+      <div class="hero-visual" aria-label="Resumo das tecnologias de backend"><div class="terminal-card"><div class="terminal-bar"><span></span><span></span><span></span><p>backend.ts</p></div><pre><code><b>const</b> profile = {
+  role: <em>"Backend Developer"</em>,
+  focus: [<em>"TypeScript"</em>, <em>"Node.js"</em>],
+  experience: [<em>"Python"</em>, <em>"Django"</em>],
+  building: <em>"REST APIs"</em>
+};</code></pre><div class="terminal-footer"><i data-lucide="circle-check"></i>Disponível para oportunidades</div></div></div>
+    </section>
+    <section class="section shell two-columns" id="sobre"><article class="panel"><div class="section-title"><i data-lucide="user"></i><h2>Sobre mim</h2></div><p>Sou desenvolvedor backend com experiência profissional em sistemas web corporativos, atuando com Python, Django, SQL e Oracle. Desenvolvo e mantenho aplicações, implemento funcionalidades, integro bancos de dados e investigo bugs para entregar melhorias consistentes.</p></article><article class="panel"><div class="section-title"><i data-lucide="route"></i><h2>Direção atual</h2></div><p>Atualmente direciono minha evolução para TypeScript e Node.js, com foco em APIs e aplicações backend escaláveis. Em projetos pessoais, aprofundo PostgreSQL, Docker, DDD, TDD, SOLID, padrões de projeto e arquitetura de software.</p></article></section>
+    <section class="section shell panel" id="experiencia"><div class="section-title"><i data-lucide="briefcase-business"></i><h2>Experiência profissional</h2></div><div class="timeline">
+      <article class="timeline-item primary-experience"><div class="timeline-date">2024 - 2026</div><div class="timeline-content"><h3>Desenvolvedor Júnior <span>Vólus</span></h3><ul><li>Desenvolvi e evoluí sistemas web corporativos, implementando funcionalidades backend e integrações com Python, Django, JavaScript e TypeScript.</li><li>Integrei funcionalidades ao Oracle, utilizando SQL para consultas, validações e manipulação de dados.</li><li>Analisei e corrigi bugs e incidentes em aplicações, integrações e dados.</li><li>Otimizei consultas SQL e rotinas de acesso a dados, contribuindo para a performance e estabilidade dos sistemas.</li><li>Utilizei Git na colaboração e transformei demandas de negócio em soluções técnicas.</li></ul></div></article>
+      <article class="timeline-item secondary-experience"><div class="timeline-date">2023 - 2024</div><div class="timeline-content"><h3>Assistente de Suporte de TI <span>Vólus</span></h3><p>Suporte técnico a clientes e setores internos, consultas em Oracle, manutenção de máquinas, redes e acompanhamento de sistemas internos.</p></div></article>
+      <article class="timeline-item secondary-experience"><div class="timeline-date">2022 - 2023</div><div class="timeline-content"><h3>Estagiário de Tecnologia / Suporte <span>Vólus</span></h3><p>Atendimento de chamados, suporte a usuários, configuração de equipamentos e apoio às rotinas de infraestrutura de TI.</p></div></article>
+    </div></section>
+    <section class="section shell panel" id="tecnologias"><div class="section-title"><i data-lucide="terminal"></i><h2>Tecnologias e práticas</h2></div><div class="skill-groups">
+      <div><h3>Experiência e projetos</h3><div class="tech-grid"><span><i class="devicon-typescript-plain colored"></i>TypeScript</span><span><i class="devicon-nodejs-plain colored"></i>Node.js</span><span><i class="devicon-python-plain colored"></i>Python</span><span><i class="devicon-django-plain colored"></i>Django</span><span><i class="devicon-postgresql-plain colored"></i>PostgreSQL</span><span><i data-lucide="database"></i>SQL</span><span><i class="devicon-docker-plain colored"></i>Docker</span><span><i class="devicon-git-plain colored"></i>Git</span><span><i data-lucide="network"></i>APIs REST</span></div></div>
+      <div><h3>Também utilizo</h3><div class="tech-grid compact"><span><i class="devicon-javascript-plain colored"></i>JavaScript</span><span><i class="devicon-react-original colored"></i>React</span><span><i class="devicon-nextjs-plain"></i>Next.js</span><span><i class="devicon-oracle-original colored"></i>Oracle</span><span><i data-lucide="database"></i>Prisma</span><span><i data-lucide="zap"></i>FastAPI</span></div></div>
+      <div><h3>Arquitetura e práticas</h3><div class="practice-list"><span>Domain-Driven Design</span><span>TDD</span><span>SOLID</span><span>Design Patterns</span><span>Clean Code</span><span>Arquitetura de Software</span></div></div>
+      <div class="learning-group"><h3><i data-lucide="graduation-cap"></i>Em estudo</h3><p>Conhecimentos em evolução, apresentados separadamente da experiência prática.</p><div class="practice-list"><span>Go</span><span>NestJS</span><span>Kafka e mensageria</span><span>Microsserviços</span><span>Sistemas distribuídos</span><span>Cloud</span><span>DevOps / CI/CD</span></div></div>
+    </div></section>
+    <section class="section shell panel" id="projetos"><div class="section-heading"><div class="section-title"><i data-lucide="folder-git-2"></i><h2>Projetos em destaque</h2></div><a class="text-link" href="https://github.com/RaelMartinss" target="_blank" rel="noopener noreferrer">Ver todos no GitHub<i data-lucide="arrow-up-right"></i></a></div><div class="project-grid">
+      <article class="project-card featured-project"><div class="project-media project-ddd"><i data-lucide="boxes"></i><span>Arquitetura de domínio</span></div><h3>DDD Patterns</h3><p>Projeto desenvolvido para estudar e aplicar conceitos de Domain-Driven Design utilizando TypeScript, incluindo Entities, Value Objects, Aggregates e regras de domínio, com desenvolvimento orientado a testes.</p><div class="tags"><span>TypeScript</span><span>DDD</span><span>TDD</span><span>Entities</span><span>Value Objects</span><span>Aggregates</span></div><a class="card-link" href="https://github.com/RaelMartinss/ddd-patterns" target="_blank" rel="noopener noreferrer">Ver projeto<i data-lucide="arrow-up-right"></i></a></article>
+      <article class="project-card"><div class="project-media project-orion"><i data-lucide="bot"></i><span>Integrações e automações</span></div><h3>Orion</h3><p>Assistente inteligente desenvolvido com arquitetura modular, integração com modelos de linguagem e APIs externas, explorando agentes, automações e mecanismos de memória.</p><div class="tags"><span>TypeScript</span><span>Node.js</span><span>LLMs</span><span>APIs</span><span>IA</span></div></article>
+      <article class="project-card"><div class="project-media project-finance"><i data-lucide="badge-dollar-sign"></i><span>Persistência e APIs</span></div><h3>AppFinance</h3><p>Aplicação de gerenciamento financeiro desenvolvida com TypeScript e PostgreSQL, utilizando Prisma para persistência de dados e APIs próprias.</p><div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span></div><a class="card-link" href="https://github.com/RaelMartinss/appfinance" target="_blank" rel="noopener noreferrer">Ver projeto<i data-lucide="arrow-up-right"></i></a></article>
+    </div></section>
+    <section class="section shell two-columns" id="formacao"><article class="panel"><div class="section-title"><i data-lucide="graduation-cap"></i><h2>Formação</h2></div><h3>Análise e Desenvolvimento de Sistemas</h3><p>Centro Universitário FAVIP Wyden</p><p class="detail-line">Em andamento · 3º período de 5</p><div class="language-block"><h3>Idiomas</h3><p><strong>Português</strong> · Nativo</p><p><strong>Inglês</strong> · Em desenvolvimento</p></div></article><article class="panel"><div class="section-title"><i data-lucide="badge-check"></i><h2>Formação complementar</h2></div><ul class="course-list"><li><button class="certificate-trigger" type="button" data-certificate-title="Domain-Driven Design (DDD)" data-certificate-src="assets/certificados/rael-martins-de-sousa-domain-driven-design.pdf">Domain-Driven Design (DDD)</button></li><li><button class="certificate-trigger" type="button" data-certificate-title="Comunicação entre sistemas" data-certificate-src="assets/certificados/rael-martins-de-sousa-comunicacao-entre-sistemas.pdf">Comunicação entre sistemas: REST, gRPC e GraphQL</button></li><li><button class="certificate-trigger" type="button" data-certificate-title="SOLID Express" data-certificate-src="assets/certificados/rael-martins-de-sousa-solid-express.pdf">SOLID Express</button></li><li><button class="certificate-trigger" type="button" data-certificate-title="Fundamentos da arquitetura de software" data-certificate-src="assets/certificados/rael-martins-de-sousa-fundamentos-da-arquitetura-de-software.pdf">Fundamentos da arquitetura de software</button></li><li><button class="certificate-trigger" type="button" data-certificate-title="Docker" data-certificate-src="assets/certificados/rael-martins-de-sousa-docker.pdf">Docker</button> · Full Cycle</li><li><button class="certificate-trigger" type="button" data-certificate-title="Padrões e Técnicas Avançadas com Git e GitHub" data-certificate-src="assets/certificados/rael-martins-de-sousa-padroes-e-tecnicas-avancadas-com-git-e-github.pdf">Padrões e Técnicas Avançadas com Git e GitHub</button> · Full Cycle</li><li><button class="certificate-trigger" type="button" data-certificate-title="Integração Contínua" data-certificate-src="assets/certificados/rael-martins-de-sousa-integracao-continua.pdf">Integração Contínua</button> e <button class="certificate-trigger" type="button" data-certificate-title="GitOps" data-certificate-src="assets/certificados/rael-martins-de-sousa-gitops.pdf">GitOps</button> · Full Cycle</li></ul></article></section>
+    <section class="section shell contact-panel" id="contato"><div><div class="section-title"><i data-lucide="send"></i><h2>Entre em contato</h2></div><p>Para conversar sobre oportunidades ou projetos, entre em contato pelos canais abaixo.</p></div><div class="contact-actions"><a href="mailto:raelpgm2@gmail.com"><i data-lucide="mail"></i>raelpgm2@gmail.com</a><a href="https://github.com/RaelMartinss" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub</a><a href="https://www.linkedin.com/in/rael-martins-dev" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i>LinkedIn</a><span><i data-lucide="map-pin"></i>Paragominas - PA, Brasil</span></div></section>
+  </main>
+  <div class="certificate-modal" id="certificate-modal" role="dialog" aria-modal="true" aria-labelledby="certificate-title" aria-hidden="true">
+    <div class="certificate-modal__backdrop" data-certificate-close></div>
+    <section class="certificate-modal__content" role="document">
+      <div class="certificate-modal__header"><h2 id="certificate-title">Certificado</h2><button class="certificate-modal__close" type="button" aria-label="Fechar certificado" data-certificate-close><i data-lucide="x"></i></button></div>
+      <iframe class="certificate-modal__document" title="Visualização do certificado"></iframe>
+    </section>
+  </div>
+  <footer class="footer shell"><a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-mark">RM</span></a><p>© 2026 Rael Martins. Todos os direitos reservados.</p><span>Desenvolvido com HTML, CSS e JavaScript.</span></footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="js/scripts.js"></script>
+</body></html>
