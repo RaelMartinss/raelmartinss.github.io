@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="8" fill="#0b0c0e" stroke="#2e3440" stroke-width="1.5"/>
+  <!-- Tall, Ultra-Crisp Pure White R (x: 5..29.5, y: 8..56) -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8h13.8C25.4 8 29.5 12.6 29.5 20.5c0 5.4-2.4 9.3-6.6 11L30 56h-8.6l-5.9-22.5H13V56H5V8zm8 7.5v11h5.2c2.6 0 4-1.9 4-5.5 0-3.6-1.4-5.5-4-5.5H13z" fill="#ffffff"/>
+  <!-- Tall, Ultra-Crisp Pure White M (x: 33..59, y: 8..56) -->
+  <path d="M33 56V8h7.8l5.4 23.5L51.6 8H59v48h-7.2V24.5L47.5 46h-2.9l-4.4-21.5V56H33z" fill="#ffffff"/>
+</svg>
