@@ -1,6 +1,6 @@
 # Rael Martins · Portfólio
 
-**Rael Martins**, Desenvolvedor Backend com experiência em sistemas web corporativos (Python, Django, SQL e Oracle) e foco atual em TypeScript, Node.js, NestJS, APIs REST, PostgreSQL, Docker e Domain-Driven Design.
+**Rael Martins**, Desenvolvedor Backend com atuação Full Stack em sistemas web corporativos (Python, Django, SQL e Oracle) e foco atual em TypeScript, Node.js, NestJS, APIs REST, PostgreSQL, Docker e Domain-Driven Design.
 
 [Acessar portfólio](https://raelmartinss.github.io/) · [GitHub](https://github.com/RaelMartinss) · [LinkedIn](https://www.linkedin.com/in/rael-martins-dev)
 
