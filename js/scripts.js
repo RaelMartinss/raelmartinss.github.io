@@ -65,6 +65,21 @@ certificateTriggers.forEach((trigger) => {
 
 certificateCloseButtons.forEach((btn) => btn.addEventListener("click", closeCertificateModal));
 
+document.querySelectorAll("[data-copy-email]").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+        const email = btn.dataset.copyEmail;
+        const label = btn.querySelector("span");
+        try {
+            await navigator.clipboard.writeText(email);
+            btn.classList.add("is-copied");
+            if (label) label.textContent = "Copiado!";
+            setTimeout(() => { btn.classList.remove("is-copied"); if (label) label.textContent = "Copiar"; }, 2200);
+        } catch {
+            window.location.href = `mailto:${email}`;
+        }
+    });
+});
+
 window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && certificateModal?.classList.contains("is-open")) return closeCertificateModal();
     if (e.key === "Escape" && menu?.classList.contains("is-open")) { setMenuState(false); menuButton?.focus(); return; }

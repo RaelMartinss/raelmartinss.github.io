@@ -144,6 +144,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .contact-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .contact-card { display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); transition: border-color 0.18s, background 0.18s; }
 .contact-card:hover { border-color: var(--accent); background: var(--surface-subtle); }
+.contact-email-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.copy-email-btn { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--surface-subtle); color: var(--text); font: 500 0.76rem var(--font-mono); cursor: pointer; transition: border-color 0.18s, color 0.18s; }
+.copy-email-btn svg { width: 14px; height: 14px; color: var(--accent); }
+.copy-email-btn:hover, .copy-email-btn.is-copied { border-color: var(--accent); color: var(--accent); }
 .contact-label { color: var(--muted); font: 400 0.78rem var(--font-mono); }
 .contact-value { display: flex; align-items: center; gap: 9px; font-size: 0.95rem; font-weight: 500; }
 .footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px; padding: 32px 0 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
